@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './TeamMember.css';
 import MatterEmptyAvatar from '../../assets/matter_empty_avatar.svg';
+import JoinForm from '../JoinForm/JoinForm';
 
 class TeamMember extends React.PureComponent {
   static propTypes = {
@@ -15,10 +16,31 @@ class TeamMember extends React.PureComponent {
   static defaultProps = {
     photoUrl: MatterEmptyAvatar,
     story: null,
-    favoriteColor: '#3466F2'
+    favoriteColor: '#3466F2',
   };
 
+  constructor(props){
+    super(props);
+    this.showForm = this.showForm.bind(this);
+    this.state = {showJoinForm: false};
+  }
+
+  showForm(){
+    this.setState({showJoinForm: true})
+  }
+
   render() {
+    const showJoinForm = this.state.showJoinForm;
+    console.log(showJoinForm);
+    let title = this.props.title;
+    let button, joinForm;
+    if (title ==="New Teammate"){
+      button = <button className="join-btn" onClick={this.showForm}>Join the team!</button>
+    }
+    if (showJoinForm) {
+      joinForm = <JoinForm showJoinForm={this.showJoinForm} />
+    } 
+
     return (
       <div className="container">
         <header>
@@ -31,6 +53,8 @@ class TeamMember extends React.PureComponent {
           </div>
           <h2 className="title">{this.props.title}</h2>
           <h1 className="name">{this.props.name}</h1>
+          {button}
+          {joinForm}
         </header>
         <div className="body">{this.props.story}</div>
         <footer style={{ backgroundColor: this.props.favoriteColor }}>
@@ -51,3 +75,4 @@ class TeamMember extends React.PureComponent {
 }
 
 export default TeamMember;
+
