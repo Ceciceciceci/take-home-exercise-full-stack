@@ -29,20 +29,26 @@ class TeamMember extends React.PureComponent {
     this.setState({showJoinForm: true})
   }
 
+  hideForm = () => {
+    this.setState({showJoinForm: false});
+  };
+
   render() {
     const showJoinForm = this.state.showJoinForm;
     console.log(showJoinForm);
     let title = this.props.title;
-    let button, joinForm;
+    let button, joinForm, overlay;
     if (title ==="New Teammate"){
-      button = <button className="join-btn" onClick={this.showForm}>Join the team!</button>
+      button = <button className="join-btn" onClick={this.showForm}>Join the team here!</button>
     }
-    if (showJoinForm) {
-      joinForm = <JoinForm showJoinForm={this.showJoinForm} />
-    } 
+    // if (showJoinForm) {
+      joinForm = <JoinForm show={this.state.showJoinForm} handleClose={this.hideForm} />
+    // } 
 
     return (
       <div className="container">
+          {overlay}
+          {joinForm}
         <header>
           <div className="avatar-container">
             <img
@@ -54,7 +60,6 @@ class TeamMember extends React.PureComponent {
           <h2 className="title">{this.props.title}</h2>
           <h1 className="name">{this.props.name}</h1>
           {button}
-          {joinForm}
         </header>
         <div className="body">{this.props.story}</div>
         <footer style={{ backgroundColor: this.props.favoriteColor }}>
