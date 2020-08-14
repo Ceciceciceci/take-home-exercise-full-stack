@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './TeamMember.css';
 import MatterEmptyAvatar from '../../assets/matter_empty_avatar.svg';
-import JoinForm from '../JoinForm/JoinForm';
+import Modal from '../Modal/Modal';
 
 class TeamMember extends React.PureComponent {
   static propTypes = {
@@ -37,18 +37,15 @@ class TeamMember extends React.PureComponent {
     const showJoinForm = this.state.showJoinForm;
     console.log(showJoinForm);
     let title = this.props.title;
-    let button, joinForm, overlay;
+    let button;
     if (title ==="New Teammate"){
       button = <button className="join-btn" onClick={this.showForm}>Join the team here!</button>
     }
-    // if (showJoinForm) {
-      joinForm = <JoinForm show={this.state.showJoinForm} handleClose={this.hideForm} />
-    // } 
+    let modal = <Modal show={this.state.showJoinForm} handleClose={this.hideForm} />
 
     return (
       <div className="container">
-          {overlay}
-          {joinForm}
+          {modal}
         <header>
           <div className="avatar-container">
             <img
