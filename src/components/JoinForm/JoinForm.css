@@ -8,9 +8,20 @@
     justify-content: space-between;
 
 }
-.form-body div{
+.form-body .form-field{
     width: 48.5%;
+    position: relative;
+    text-align: left;
 }
+
+.form-body .swatches-picker{
+    position: absolute;
+    z-index: 5;
+}
+.swatches-picker div div div{
+    height: 120px;
+}
+
 .form-body div:nth-child(4){
     width: 100%; /*for text area*/
 }
@@ -39,10 +50,15 @@ label{
     align-items: flex-start;
     font-weight: 700;
     padding-bottom: 0px;
+    padding-top: 15px;
+}
+.error{
+    font-size: 0.8rem;
+    color:red;
 }
 input, textarea{
     padding: 5px 10px;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0px 1px 0px;
     display: flex;
     justify-content: center;
     align-items: center;

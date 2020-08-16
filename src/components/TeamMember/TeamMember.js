@@ -34,18 +34,15 @@ class TeamMember extends React.PureComponent {
   };
 
   render() {
-    const showJoinForm = this.state.showJoinForm;
-    console.log(showJoinForm);
     let title = this.props.title;
     let button;
     if (title ==="New Teammate"){
-      button = <button className="join-btn" onClick={this.showForm}>Join the team here!</button>
+      button = <button className="join-btn" onClick={this.showForm}>Join the team!</button>
     }
     let modal = <Modal show={this.state.showJoinForm} handleClose={this.hideForm} />
 
     return (
       <div className="container">
-          {modal}
         <header>
           <div className="avatar-container">
             <img
@@ -58,7 +55,7 @@ class TeamMember extends React.PureComponent {
           <h1 className="name">{this.props.name}</h1>
           {button}
         </header>
-        <div className="body">{this.props.story}</div>
+        <div className="body"><p>{this.props.story}</p></div>
         <footer style={{ backgroundColor: this.props.favoriteColor }}>
           <div className="full-width-flex-box">
             <div className="one-third-flex-box stat">9.0</div>
@@ -71,6 +68,7 @@ class TeamMember extends React.PureComponent {
             <div className="one-third-flex-box">GRIT</div>
           </div>
         </footer>
+        {modal}
       </div>
     );
   }

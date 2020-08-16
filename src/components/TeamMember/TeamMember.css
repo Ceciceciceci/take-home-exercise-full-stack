@@ -110,10 +110,20 @@ footer .stat {
 }
 .display-block {
   display: block;
+  transition: all 300ms ease-in-out;
+  animation: appear 200ms linear;
+}
+
+@keyframes appear{
+  0% {opacity: 0;}
+  70%{opacity: 0.8}
+  100% {opacity: 1;}
 }
 
 .display-none {
+  opacity: 0;
   display: none;
+  transition: all 300ms ease-in-out;
 }
 
 .form-container{
@@ -127,6 +137,7 @@ footer .stat {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  transition: all 150ms ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
