@@ -1,7 +1,8 @@
 # Matter Engineering Take-Home Exercise
 
 ## Message
-Hello Matter team, this is my submission for the take home test. I learned a lot from doing this project, and got to try a few new things, and ran into some bugs that I learned to fix now. I decided to link the github repo link in the email as well just in case the build file I send isn't sufficient since I've ran into trouble trying to use `npm run build` to get the bundle.js file. i would get an error about
+
+Hello Matter team, this is my submission for the take home test. I learned a lot from doing this project and ran into some bugs that I learned to fix now. I decided to link the github repo link as well just in case the bundle file I sent isn't working. 
 
 ## Getting Set Up
 
@@ -14,8 +15,6 @@ The exercise requires [Node.js](https://nodejs.org/en/) to be installed. We reco
 1. Next, `npm run seed` will seed the local SQLite database. **Warning: This will drop the database if it exists**. The database lives in a local file `database.sqlite3`.
 
 1. Then run `npm start` which should start both the server and the React client.
-
-❗️ **Make sure you commit all changes to the master branch!**
 
 ## Technical Notes
 
@@ -31,9 +30,9 @@ Below is a list of user stories corresponding to our acceptance criteria.
 
 1. I can click a button inside the empty "NEW TEAMMATE" card at the bottom that says 'Join the team!'.
 
-1. Clicking the 'Join the team!' button displays a form allowing me to fill out all of my team member information as per the data model (see `backend/model.js`).
+2. Clicking the 'Join the team!' button displays a form allowing me to fill out all of my team member information as per the data model (see `backend/model.js`).
 
-1. Filling out the form will create a new team member in the database that persists on reload.
+3. Filling out the form will create a new team member in the database that persists on reload.
 
-1. I can see team member cards for all of the new team members I have created.
+4. I can see team member cards for all of the new team members I have created.
 
