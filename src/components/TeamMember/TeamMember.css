@@ -131,6 +131,7 @@ footer .stat {
   padding: 15px;
   font-size: 14px;
   background: white;
+  border-top: 10px solid #7986cb;
   width: 500px;
   height: auto;
   border-radius: 5px;

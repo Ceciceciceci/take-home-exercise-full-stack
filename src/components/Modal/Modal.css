@@ -1,19 +1,24 @@
 .form-header{
     position:relative;
 }
+.form-header h2{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
 .form-header p{
-    padding: 0px 5px; 
+    color: #606060;
+    padding: 0px 15px;
+    letter-spacing: 0.5px;
 }
 .close-btn{
     position:absolute;
-    top:-5px;
+    top: -5px;
     right: 0px;
     background-color:white;
     border: none;
     border-radius: 5px;
     font-size: 1.5rem;
     color: #aaa;
-    /* padding: 5px 10px; */
     transition: all 150ms ease-in-out;
 }
 .close-btn:hover{

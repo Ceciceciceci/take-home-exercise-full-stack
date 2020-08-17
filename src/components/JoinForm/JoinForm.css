@@ -2,7 +2,7 @@
 .form-body{
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 25px 15px;
+    padding: 0px 15px 20px 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,9 +17,10 @@
 .form-body .swatches-picker{
     position: absolute;
     z-index: 5;
+    height: 150px !important;
 }
 .swatches-picker div div div{
-    height: 120px;
+    height: 125px;
 }
 
 .form-body div:nth-child(4){

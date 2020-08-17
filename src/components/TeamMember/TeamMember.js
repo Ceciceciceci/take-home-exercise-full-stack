@@ -22,7 +22,7 @@ class TeamMember extends React.PureComponent {
   constructor(props){
     super(props);
     this.showForm = this.showForm.bind(this);
-    this.state = {showJoinForm: false};
+    this.state = { showJoinForm: false };
   }
 
   showForm(){
@@ -31,7 +31,7 @@ class TeamMember extends React.PureComponent {
 
   hideForm = () => {
     this.setState({showJoinForm: false});
-  };
+  }
 
   render() {
     let title = this.props.title;
