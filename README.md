@@ -1,10 +1,7 @@
 # Matter Engineering Take-Home Exercise
 
-💫 Welcome to the Matter take-home coding exercise! 🎉
-
-This full-stack exercise involves building a form component in React that also makes a request to the Node.js/Express.js backend. We imagine you should spend around four hours at minimum to implement this feature, but want to emphasize that there is no specific deadline, or ticking clock for the implementation time. You can feel free to break the work up over multiple days. The entire point of this exercise is to get a good sense of how you build software.
-
-Also, please keep in mind that you are not specifically limited to four hours. If you want to spend more time than that, using this as an opportunity to learn a new library or technology, or just generally making it more awesome, you are of course free to do so.
+## Message
+Hello Matter team, this is my submission for the take home test. I learned a lot from doing this project and ran into some bugs that I learned to fix now. I decided to link the github repo link as well just in case the build file I send isn't sufficient since I've ran into trouble trying to use `npm run build` to get the bundle.js file.
 
 ## Getting Set Up
 
@@ -40,14 +37,3 @@ Below is a list of user stories corresponding to our acceptance criteria.
 
 1. I can see team member cards for all of the new team members I have created.
 
-## Going Above and Beyond the Requirements
-
-Given the time expectations of this exercise, we don't expect anyone to submit anything super fancy, but if you find yourself with extra time, any extra credit item(s) that showcase your unique strengths would be awesome! 🙌
-
-## Submitting the Assignment
-
-When you have finished the assignment, create a bundle of your work by running `npm run bundle` in the repo root.
-
-This generates a bundle file called `take-home-exercise` based on your local master branch. Return that file to us via e-mail, and we'll review your code within 1-2 days.
-
-Thank you and good luck! 🙏
