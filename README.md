@@ -1,7 +1,7 @@
 # Matter Engineering Take-Home Exercise
 
 ## Message
-Hello Matter team, this is my submission for the take home test. I learned a lot from doing this project and ran into some bugs that I learned to fix now. I decided to link the github repo link as well just in case the build file I send isn't sufficient since I've ran into trouble trying to use `npm run build` to get the bundle.js file.
+Hello Matter team, this is my submission for the take home test. I learned a lot from doing this project, and got to try a few new things, and ran into some bugs that I learned to fix now. I decided to link the github repo link in the email as well just in case the build file I send isn't sufficient since I've ran into trouble trying to use `npm run build` to get the bundle.js file. i would get an error about
 
 ## Getting Set Up
 

@@ -153,9 +153,10 @@ class JoinForm extends React.PureComponent {
                     let status = res.status;
                     if (status === 200){
                         window.location = "/"; //This line of code will reload the page you once the submission is succeed
-                        alert("Successfully added your info.");
+                        //alert message
+                        // alert("Successfully added your info.");
                     } else {
-                        alert("Failed to submit form. Try again.");
+                        // alert("Failed to submit form. Try again.");
                     }
                 })
         } else {
